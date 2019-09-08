@@ -22,11 +22,11 @@ export default {
                 },
                 {
                     to: '/login/a',
-                    text: '欢迎页面a'
+                    text: '登录页面a'
                 },
                 {
                     to: '/login/b',
-                    text: '欢迎页面b'
+                    text: '登录页面b'
                 }
             ]
         }

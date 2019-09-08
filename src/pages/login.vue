@@ -5,6 +5,7 @@
     </div>
 </template>
 <script>
+import api from '../server/api.js'
 export default {
     name: "Login",
     data() {
@@ -24,6 +25,11 @@ export default {
                 }
             ]
         }
+    },
+    created() {
+        this.$axios.get(api.getUserInfo).then(res => {
+            console.log(res)
+        })
     },
     methods:{
         goPage(path) {
