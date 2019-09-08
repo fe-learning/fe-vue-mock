@@ -30,8 +30,8 @@ module.exports = {
                 loader: 'vue-loader'
             },
             {
-                test:/\.js$/,
-                exclude:/node_modules/,
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
                 loader:'babel-loader'
             },
             {

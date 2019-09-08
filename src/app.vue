@@ -10,10 +10,9 @@ import api from './server/api.js'
 export default {
     // App.vue是项目的根组件
     name: "App" ,
-    created() {
-        this.$axios.get(api.getUserInfo).then(res => {
-            console.log(res)
-        })
+    async created() {
+        let res = this.$axios.get(api.getUserInfo)
+        console.log(res)
     }
 }
 </script>
